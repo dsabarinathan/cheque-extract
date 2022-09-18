@@ -52,9 +52,12 @@ python main.py --testImagePath="cheque image folder"
  'AC': {'ocr': 'CA 434390632',
   'pos': array([249, 372, 483, 421]),
   'confidence': 0.9562502503395081},
- 'Data': {'ocr': '0',
+ 'Date': {'ocr': '14-07-2018',
   'pos': array([1198,   79, 1559,  137]),
-  'confidence': 0.608750581741333}}
+  'confidence': 0.608750581741333}
+  'Signature' :{'label':'verified'}
+  }
+  
 
 
 ````
