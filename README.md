@@ -1,9 +1,20 @@
-# cheque-extract
-Àutomatic cheque extraction module using deep learning
+# Cheque Extract
+
+Àutomatic cheque extraction module using deep learning. 
 
 
+<p align="center">
+ <img src="images/cheque_preocessDiagram.jpg" align="middle" width = "1000"/>
+<p align="center">
 
-Sample JSON output: 
+
+# Object detection results:
+
+<p align="center">
+ <img src="images/sampleoutput.png" align="middle" width = "1000"/>
+<p align="center">
+
+# Sample JSON output: 
 
 ````
 {'Pay': {'ocr': 'N-Sundan',
