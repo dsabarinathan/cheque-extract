@@ -8,7 +8,7 @@ import os
 import argparse
 import time
 from region_detection import detectionClass
-from utils import load_image_into_numpy_array,region_ocr
+from utils import load_image_into_numpy_array,region_ocr,skew_correction
 import pytesseract
 import tensorflow as tf
 from tqdm import tqdm
@@ -37,7 +37,10 @@ if __name__ == '__main__':
         recognized = {}
         start_time = time.time()
         imr = load_image_into_numpy_array(testImagePath+fileName[i])
-        boxes,classes,scores = regionapi.run(imr)
+        
+        imr = skew_correction(imr) # skewness correction
+        
+        boxes,classes,scores = regionapi.run(imr) # cheque region detection
         
         for row in range(len(classes)):        
     
