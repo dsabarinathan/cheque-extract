@@ -1,6 +1,26 @@
 # Cheque Extract
 
-Àutomatic cheque extraction module using deep learning. 
+Automatic cheque extraction module using deep learning.  This is a tensorflow implementation of a CNN for cheque region detection and text recognition.  I have trained the SSD efficienet0 for detecting the region in the cheque.
+
+# Dependencies
+ 
+- paddleocr>=2.0.1
+- tensorflow ==2.7.0
+- pytesseract 
+- opencv
+- deskew
+- PIL
+- six
+
+
+# Testing
+
+```
+
+python main.py --testImagePath="cheque image folder"
+
+```
+
 
 
 <p align="center">
