@@ -4,6 +4,7 @@ Automatic cheque extraction module using deep learning.  This is a tensorflow im
 
 # Dependencies
  
+- Python 3.7.14 
 - paddleocr>=2.0.1
 - tensorflow ==2.7.0
 - pytesseract 
